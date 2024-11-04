@@ -1,0 +1,19 @@
+---
+title: Push
+---
+
+import { Aside } from "@astrojs/starlight/components";
+
+### Force push
+
+Forces a push to a remote repository.
+
+In combination with the rebase function, for example, it allows you to delete or modify a specific history, but at the cost of destroying the commit history for that branch.
+
+```sh
+git push -f
+```
+
+<Aside type="danger">
+  If you are not familiar with the Git spec, you should not use force-push.
+</Aside>

@@ -1,0 +1,51 @@
+---
+title: Delete Partition Using Diskpart
+description: How to delete multiple partitions on USB using “DISKPART”.
+---
+
+import { Aside } from '@astrojs/starlight/components';
+
+## How to
+
+1. Open Terminal as Administrator.
+2. Launch Diskpart by typing:
+
+```bat
+DISKPART
+```
+
+3. Show all the disks by typing:
+
+```bat
+LIST DISK
+```
+
+4. Select the disk you want to delete the partition from by typing:
+
+```bat
+SELECT DISK <disk number>
+```
+
+5. Check disk information to see if it is the correct disk.
+
+```bat
+DETAIL DISK
+```
+
+6. Delete the partition by typing:
+
+```bat
+CLEAN
+```
+
+7. Create a new partition by typing:
+
+```bat
+CREATE PARTITION PRIMARY
+```
+
+----
+
+<Aside type="tip">
+    The same can be done from the GUI instead of the command line.
+</Aside>

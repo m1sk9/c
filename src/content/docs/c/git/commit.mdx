@@ -1,0 +1,47 @@
+---
+title: Commit
+---
+
+import { Aside } from "@astrojs/starlight/components";
+
+## Staging all files
+
+Staging all files.
+
+```sh
+git add .
+```
+
+<Aside type="danger">
+  It should not be used if you are not familiar with it because it stages all files unconditionally.
+</Aside>
+
+## Empty commit
+
+Use this when you have no changes to a file but want to commit it, for example for testing.
+
+```sh
+git commit --allow-empty -m "Empty commit"
+```
+
+## Modify the previous commit
+
+```sh
+git commit --amend
+```
+
+## Undo the previous commit
+
+```sh
+git reset --soft HEAD^
+```
+
+## Undo the last commit and discard the changes.
+
+Undo the previous commit and discard the changes.
+
+While [`git reset --soft HEAD^`](#undo-the-previous-commit) only undoes the previous commit, this command undoes the changes themselves. That is, the file is restored to its original state.
+
+```sh
+git reset --hard HEAD^
+```
