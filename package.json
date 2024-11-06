@@ -3,7 +3,7 @@
 	"description": "m1sk9's cheatsheet",
 	"type": "module",
 	"version": "0.0.1",
-	"packageManager": "pnpm@9.11.0",
+	"packageManager": "pnpm@9.12.3",
 	"license": "MIT",
 	"repository": {
 		"type": "git",
